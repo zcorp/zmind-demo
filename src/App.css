@@ -1,0 +1,38 @@
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  width: 100%;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+/* Landing and authentication pages scroll; the editor owns its viewport. */
+body.scrollable {
+  overflow: auto;
+}
+
+body.locked {
+  overflow: hidden;
+  min-width: 320px;
+}
+
+::selection {
+  background: #dce8d2;
+  color: #252a22;
+}
