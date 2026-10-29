@@ -53,3 +53,13 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Configure custom domain
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.repos.updatePages({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              cname: 'www.zmind.fr',
+            });
+            core.info('Configured www.zmind.fr as the GitHub Pages domain.');
