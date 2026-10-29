@@ -18,7 +18,7 @@ jobs:
     permissions:
       contents: read
     env:
-      DEMO_BASE_PATH: /
+      DEMO_BASE_PATH: ./
     steps:
       - name: Check out source
         uses: actions/checkout@v4

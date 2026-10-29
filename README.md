@@ -30,7 +30,8 @@ le runner GitHub, exécute les tests et publie le dossier `dist`.
 Lors de la première configuration du dépôt, choisir **Settings → Pages →
 Build and deployment → GitHub Actions** et définir `www.zmind.fr` comme domaine
 personnalisé. `public/CNAME` est copié dans le build Pages et le workflow
-construit le site à la racine du domaine.
+construit le site avec des chemins relatifs, compatibles avec GitHub Pages et
+le domaine personnalisé.
 
 Le DNS de `www.zmind.fr` doit contenir un CNAME vers `zcorp.github.io`. Une fois
 le domaine validé par GitHub et le certificat TLS émis, activer **Enforce HTTPS**
