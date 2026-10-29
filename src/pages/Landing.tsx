@@ -170,6 +170,26 @@ export function Landing() {
               <Button size="small" onClick={() => navigate('/auth')}>Connexion</Button>
             </Stack>
           </Stack>
+          <Stack
+            direction={{ xs: 'column', sm: 'row' }}
+            alignItems="center"
+            justifyContent="space-between"
+            spacing={1}
+            sx={{ mt: 2 }}
+          >
+            <Typography variant="caption" color="text.secondary">
+              © {new Date().getFullYear()} ZCOORE. Tous droits réservés.
+            </Typography>
+            <Typography
+              component="a"
+              href="mailto:contact@zmind.fr"
+              variant="caption"
+              color="text.secondary"
+              sx={{ textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }}
+            >
+              contact@zmind.fr
+            </Typography>
+          </Stack>
         </Container>
       </Box>
     </Box>
